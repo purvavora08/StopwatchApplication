@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/stopwatchDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="48sp"
+        android:text="00:00:00"
+        android:layout_marginTop="100dp"/>
+
+       <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_below="@id/stopwatchDisplay"
+        android:layout_marginStart="32dp"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_toEndOf="@id/startButton"
+        android:layout_marginStart="16dp"
+        android:layout_below="@id/stopwatchDisplay"/>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_toEndOf="@id/stopButton"
+        android:layout_marginStart="16dp"
+        android:layout_below="@id/stopwatchDisplay"/>
+
+</RelativeLayout>
+    
